@@ -1,4 +1,4 @@
-function Gameboard() {
+const Gameboard = (function () {
     const rows = 3;
     const columns = 3;
     const board = [];
@@ -9,6 +9,12 @@ function Gameboard() {
             board[i].push(Cell());
         }
     }
-}
 
-const getBoard = () => board;
+     return {
+        getBoard: function () {
+            return board;
+        },
+        // ... other methods or properties you want to expose
+    };
+})();
+
