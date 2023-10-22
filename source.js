@@ -1,6 +1,6 @@
 function Gameboard() {
-    const rows = 2;
-    const columns = 2;
+    const rows = 3;
+    const columns = 3;
     const board = [];
 
     for (let i = 0; i < rows; i++) {
@@ -10,3 +10,5 @@ function Gameboard() {
         }
     }
 }
+
+const getBoard = () => board;
