@@ -16,6 +16,10 @@ const Gameboard = (function () {
         },
         // ... other methods or properties you want to expose
     };
+
+    const makePlay = (column, player) => {
+        const availableCells = board.filter((row) => row[column].getValue() === 0).map(row => row[column]);
+    }
 })();
 
 function Cell() {
